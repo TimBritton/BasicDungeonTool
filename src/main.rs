@@ -20,6 +20,8 @@ let args: Vec<_> = env::args().collect();
          "-c" => roll_chamber(),
          "-S" => roll_start_area(),
          "-s" => roll_start_area(),
+         "-e" => roll_chamber_exit(),
+         "-E" => roll_chamber_exit(),
          none => println!("Please Provide a valid Option"),
      }
 }
@@ -48,4 +50,10 @@ fn roll_chamber()
 
      let entrance_roll = dice::rollD20();
      dungeongen::printChamberExits(entrance_roll);
+}
+
+fn roll_chamber_exit()
+{
+    let chamber_roll = dice::rollD20();
+    dungeongen::printChamberExitLoc(chamber_roll);
 }

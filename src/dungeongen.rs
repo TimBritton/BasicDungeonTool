@@ -110,4 +110,33 @@ pub fn printChamberExits(roll: u32)
 }
 }
 
+pub fn printChamberExitLoc(roll: u32)
+{
+
+    match roll{
+    1 => println!("Chamber Exit opposite."),
+    2 => println!("Chamber Exit opposite."),
+    3 => println!("Chamber Exit opposite."),
+    4 => println!("Chamber Exit opposite."),
+    5 => println!("Chamber Exit opposite."),
+    6 => println!("Chamber Exit opposite."),
+    7 => println!("Chamber Exit opposite."),
+    8 => println!("Chamber Exit left of entrance "),
+    9 => println!("Chamber Exit left of entrance "),
+    10 => println!("Chamber Exit left of entrance "),
+    11 => println!("Chamber Exit left of entrance "),
+    12 => println!("Chamber Exit left of entrance "),
+    13 => println!("Chamber Exit  Wall right of entrance "),
+    14 => println!("Chamber Exit  Wall right of entrance "),
+    15 => println!("Chamber Exit  Wall right of entrance"),
+    16 => println!("Chamber Exit  Wall right of entrance"),
+    17 => println!("Chamber Exit  Wall same as entrance"),
+    18 => println!("Chamber Exit  Wall same as entrance"),
+    19 => println!("Chamber Exit  Wall same as entrance"),
+    20 => println!("Chamber Exit  Wall same as entrance"),
+    none => return(),
+    }
+    
+}
+
 
